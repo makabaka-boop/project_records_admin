@@ -1,0 +1,18 @@
+{
+  "name": "project-records-admin",
+  "version": "1.0.0",
+  "description": "项目资料、任务节点、成员分工和审批记录管理系统",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": ["project-management", "vue3", "express", "sqlite"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
